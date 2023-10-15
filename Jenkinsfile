@@ -13,7 +13,7 @@ pipeline {
                 script {
                     // Build your Java application (e.g., compile and package it into a JAR file)
                     sh 'javac Main.java'
-                    sh 'jar -cvf my-java-app.jar -C src .'
+                    sh 'jar -cvf my-java-app.jar -C  .'
                 }
             }
         }
