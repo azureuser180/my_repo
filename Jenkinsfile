@@ -21,7 +21,7 @@ pipeline {
         stage('Build Docker Image') {
             steps {
                 script {
-                    def imageName = "your-docker-hub-username/my-java-app"
+                    def imageName = "ashraf313/my-java-app"
                     def dockerfile = "Dockerfile"
 
                     // Build the Docker image
