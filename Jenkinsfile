@@ -33,7 +33,7 @@ pipeline {
         stage('Push Docker Image to Docker Hub') {
             steps {
                 script {
-                    def imageName = "your-docker-hub-username/my-java-app"
+                    def imageName = "ashraf313/my-java-app"
 
                     // Log in to Docker Hub
                     withCredentials([usernamePassword(credentialsId: 'docker-hub-credentials', usernameVariable: 'DOCKER_HUB_USER', passwordVariable: 'DOCKER_HUB_PASS')]) {
